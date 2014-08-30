@@ -116,7 +116,7 @@ ul.nav a:hover {
 
 .jumbotron {
     height: 100%;
-
+    background-image: url(../images/Wallpaper.jpg);
     background-color: #3e6169;
     -webkit-background-size: cover;
     -moz-background-size: cover;

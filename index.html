@@ -75,7 +75,7 @@
             </div>     
             <div class="row">
                 <div class="col-lg-8 col-md-10 col-sm-10 col-lg-offset-2 col-md-offset-1 col-sm-offset-1 text-center">
-                    <p>David was born and raised in Houston, TX. Graduating from The University of Texas at Austin with a major in Economics with minors in both Finance and Computer Science, David accumulated a strong quantitative and analytic background. However, his passion has always laid with storytelling. Being a second-generation Asian-American and the only child of a single mother, he spent a lot of time at home. And much of that time was spent in front of the television. There, was his first, real cultural window into the world. Since then, David has strived to pursue opportunities at the intersection between analytics, finance, film, television, and the media. He is fascinated by the interconnectedness of pragmatic business sense and unbridled creativity seen within the entertainment industry. With a unique perspective and a credo of "Keep your head in the clouds but your feet firmly on the ground," David seeks all opportunities to further learn all things about his craft. </p>
+                    <p>David was born and raised in Houston, TX. Graduating from The University of Texas at Austin with a major in Economics with minors in both Finance and Computer Science, he has accumulated a strong quantitative and analytic background. However, his passion has always been in storytelling. Being a second-generation Asian-American and the only child of a single mother, he spent a lot of time at home. And much of that time was spent in front of the television. There, was his first, real cultural window into the world. Since then, David has strived to pursue opportunities at the intersection between analytics, finance, technology, and the media. He is fascinated by the interconnectedness between pragmatic business sense and unbridled creativity seen within the media industry. With a unique perspective and a credo of "Keep your head in the clouds but your feet firmly on the ground," David seeks all opportunities to further learn all things about his craft. </p>
                     
                     <p style="margin-bottom: 20px;">During his time at university, David has striven to surround himself with and learn from the best in the industry. From working with the grassroots film community of Austin to the fast-paced corporate studio environment in Los Angeles, he has accumulated a diverse amount of perspective on the industry. Including his experiences within the industry, he has also worked to accumulate familiarity with a diverse amount of practical skills from financial quantitative analysis to Photoshop to Python.</p>
                 </div>
@@ -364,7 +364,7 @@
                 <div class="col-md-2 col-sm-3 col-xs-4">            
                     <div class="skilly">
                         <div class="caption lang">
-                        <p>Conversational (with reading and writing ability) in Mandarin Chinese and fluent in Vietnamese.</p>
+                        <p>Conversational (with writing and literacy) in Mandarin Chinese and fluent in Vietnamese.</p>
                     </div>
                     <img class="img-responsive" src="images/skills_a/lang_a.png" alt="...">
                     </div>
@@ -464,72 +464,78 @@
         <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script>
-$(document).ready(function() {     
-    //skill hover
-    $("[rel='tooltip']").tooltip();    
+            $(document).ready(function() {     
+                //skill hover
+                $("[rel='tooltip']").tooltip();    
  
-    $('.skilly').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    ); 
-    // navigation click actions 
-    $('.scroll-link').on('click', function(event){
-        event.preventDefault();
-        var sectionID = $(this).attr("data-id");
-        scrollToID('#' + sectionID, 750);
-    });
+                $('.skilly').hover(
+                    function(){
+                        $(this).find('.caption').slideDown(250); //.fadeIn(250)
+                    },
+                    function(){
+                        $(this).find('.caption').slideUp(250); //.fadeOut(205)
+                    }
+                ); 
+                // navigation click actions 
+                $('.scroll-link').on('click', function(event){
+                    event.preventDefault();
+                    var sectionID = $(this).attr("data-id");
+                    scrollToID('#' + sectionID, 750);
+                });
     
-	// scroll to top action
-	$('.scroll-top').on('click', function(event) {
-		event.preventDefault();
-		$('html, body').animate({scrollTop:0}, 'slow'); 		
-	});
-	// mobile nav toggle
-	$('#nav-toggle').on('click', function (event) {
-		event.preventDefault();
-		$('#main-nav').toggleClass("open");
-	});
-    
-    
-    toggleSlides();
+                // scroll to top action
+                $('.scroll-top').on('click', function(event) {
+                    event.preventDefault();
+                    $('html, body').animate({scrollTop:0}, 'slow'); 		
+                });
+                // mobile nav toggle
+                $('#nav-toggle').on('click', function (event) {
+                    event.preventDefault();
+                    $('#main-nav').toggleClass("open");
+                });  
+                toggleSlides();                             
+            });
+            //toggler
+            function toggleSlides(){
+                $('.toggler').click(function(event){
+                    var id=$(this).attr('id');
+                    var widgetId=id.substring(id.indexOf('-')+1,id.length);
+                    $('#'+widgetId).slideToggle();
+                    $(this).toggleClass('sliderExpanded');
+                    $('.closeSlider').click(function(){
+                        $(this).parent().hide('slow');
+                        var relatedToggler='toggler-'+$(this).parent().attr('id');
+                        $('#'+relatedToggler).removeClass('sliderExpanded');
+                    });
+                });
+            };
 
-                             
-});
-//toggler
-function toggleSlides(){
-	$('.toggler').click(function(event){
-		var id=$(this).attr('id');
-		var widgetId=id.substring(id.indexOf('-')+1,id.length);
-		$('#'+widgetId).slideToggle();
-		$(this).toggleClass('sliderExpanded');
-		$('.closeSlider').click(function(){
-				$(this).parent().hide('slow');
-				var relatedToggler='toggler-'+$(this).parent().attr('id');
-				$('#'+relatedToggler).removeClass('sliderExpanded');
-		});
-	});
-};
+            // scroll function
+            function scrollToID(id, speed){
+                var offSet = 135;
+                var targetOffset = $(id).offset().top - offSet;
+                var mainNav = $('#main-nav');
+                $('html,body').animate({scrollTop:targetOffset}, speed);
+                if (mainNav.hasClass("open")) {
+                    mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                    mainNav.removeClass("open");
+                }
+            }
+            if (typeof console === "undefined") {
+                console = {
+                    log: function() { }
+                };
+            }
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-// scroll function
-function scrollToID(id, speed){
-	var offSet = 135;
-	var targetOffset = $(id).offset().top - offSet;
-	var mainNav = $('#main-nav');
-	$('html,body').animate({scrollTop:targetOffset}, speed);
-	if (mainNav.hasClass("open")) {
-		mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-		mainNav.removeClass("open");
-	}
-}
-if (typeof console === "undefined") {
-    console = {
-        log: function() { }
-    };
-}
+            ga('create', 'UA-54324319-1', 'auto');
+            ga('send', 'pageview');
+
         </script>
         <!--[if lte IE 9]>
             <script type="text/javascript" src="js/carousel-ie-fallback.js"></script>

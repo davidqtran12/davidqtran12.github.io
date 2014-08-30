@@ -1,0 +1,434 @@
+body { 
+    padding-top: 4em;
+}
+
+h1 {
+    font-family: economica, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 4.5em;
+    color: #ECDFBD;
+}
+
+ul {
+    text-decoration-style: none;
+    max-width: 500px;
+}
+
+.fa-ul {
+    margin-left: 22px !important;
+}
+
+.li {
+   margin-bottom: -15px; 
+}
+
+p {
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: economica, sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    text-decoration-style: none;
+}
+
+#name:hover {
+    color: #3e6169 !important;
+    width: 100%;
+}
+
+#name {
+    text-decoration: none;
+    color: #ecdfbd;
+    text-transform: uppercase;  
+    font-size: 1em;
+    margin-top: -5px;
+    padding-left: .5em;
+}
+
+.bars {
+    position: absolute;
+    top: 0; bottom:0; left: 0; right:0;
+    margin: auto;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+html,body {
+    height: 100%;
+}
+
+.special,.special .jumbotron {
+    height:100%;
+}
+
+.navbar { 
+    height: 4em;
+    background-color: #ECDFBD;
+    box-shadow: none !important;
+    border-bottom: none;
+}
+
+@media (min-width: 768px)  {
+    .navbar {
+        height: 7em;
+    }
+    body { 
+        padding-top: 6em;
+    }
+    #namer {
+        margin-top: 1em !important;
+    }
+    #right-menu li {
+        margin-top: 24px;
+    }
+}
+
+#right-menu li {
+    margin-left: -.5em;
+    text-transform: uppercase;
+}
+
+ul.nav a:hover {
+    color: #6C8287 !important;
+}
+
+#right-menu li a {
+    font-size: 1em;
+    color: #3e6169;
+
+}
+
+#name {
+    font-size: 3.75vw;
+    padding-left: 0px;
+    color: #3e6169;
+}
+
+.navbar-brand:hover {
+    color: #3e6169;
+}
+
+.jumbotron {
+    height: 100%;
+
+    background-color: #3e6169;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-bottom: 0em;
+}
+
+#about {
+    background-color: #3e6169;
+    color: #ECDFBD;
+}
+
+#about .row {
+    margin-bottom: 15px;
+}
+
+#about .row h1 {
+    padding-left: 5px;
+}
+
+#about .row p {
+    margin-top: 20px;
+}
+
+#experience {
+    background-color: #ECDFBD;
+    color: #3e6169;
+}
+.slider {
+    margin-top: 1.5vw;
+}
+#experience .row {
+}
+
+#experience .row h1 {
+    padding-left: 5px;
+    margin-bottom: 35px;
+}
+
+.jobbity{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+}
+
+.exxy {
+    width: 100%;
+    margin-left: ;
+}
+
+.toggler {
+    margin-bottom: 5px;
+    cursor: crosshair;
+}
+.slider{
+	display:none;
+    margin-top: -5px;
+}
+.collapseSlider{
+	display:none;
+}
+.sliderExpanded .collapseSlider{
+	display:block;
+}
+.sliderExpanded .expandSlider{
+	display:none;
+}
+
+.content {
+    display: none;
+}
+
+#skills {
+    background-color: #3e6169;
+    color: #ECDFBD;
+}
+
+#skills .row h1 {
+    padding-left: 10px;
+}
+
+#skills .row img {
+    margin-top: 5px;
+}
+
+.container {
+    margin-top: 4.5em;
+    margin-bottom: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .skilly, .caption {
+        min-width: 150px;
+        max-width: 150px;
+    }
+}
+
+.skilly {
+    margin-top: 60px;
+    margin-bottom: 35px;
+    position:relative;
+    overflow:hidden;
+    border: 0 none;
+    box-shadow: none;
+    width: 100%;
+    margin:  auto;
+    margin-bottom: 15px;
+    display: block;
+    top:0;
+    right:10px;
+}
+ 
+.caption {
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    max-width: 150px;
+    display: none;
+    text-align:center;
+    color:#fff !important;
+    z-index:2;
+    color: #ecdfbd;  
+}
+
+@media (max-width: 768px) {
+    .skilly, .caption {
+        font-size: 1.5vw;
+    }
+}
+
+.excel {
+    background: #42714c;
+    padding: 12.5px;
+}
+
+.ps {
+    padding: 13px;
+    background: #3a3f7c;
+ 
+}
+
+.stata {
+    padding: 16px;
+    background: #a04949;
+}
+
+.webbuild {
+    padding: 16px;
+    background: #ed8455;
+}
+
+.python {
+    padding: 25px;
+    background: #8fa05f;
+}
+
+.writ {
+    padding: 5px;
+    background: #468086;
+}
+
+.quant {
+    padding: 7px;
+    background: #b2558e;
+}
+
+.pan {
+    padding: 15px;
+    background: #b28565;
+}
+
+.lang {
+    padding: 16px;
+    background: #7fb5b5;
+}
+
+.slate {
+    padding: 9px;
+    background: #9798a3;
+}
+
+.chart {
+    padding: 15px;
+    background: #debc60;
+}
+
+.soc {
+    padding: 15px;
+    background: #60486a;
+}
+
+
+#projects {
+    background-color: #ECDFBD;
+    color: #3e6169;
+}
+
+#projects .row {
+    margin-bottom: 30px;
+}
+
+#projects .row h1 {
+    padding-left: 5px;
+}
+
+h2 {
+    margin: 0;
+    text-align: left;
+    color: #3e6169;
+    padding-top: 10px;
+    font-size: 3em;
+    font-family: economica, sans-serif;
+}
+
+.stuff {
+    margin-top: 40px;
+}
+.item {
+    background: #ECDFBD;
+    text-align: center;
+    height: 350px; !important;
+}
+
+.carousel {
+    margin-bottom: 10px;
+}
+
+.bs-example: {
+    margin: 20px;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  filter:none !important;
+}
+.carousel-control {
+
+  filter: none !important;
+}
+.carousel-control.left {
+  background-image: none !important;
+  background-color: #ecdfbd !important;
+  left: 10vw !important;
+  width: 50px !important;
+}
+.carousel-control.right {
+  background-image: none !important;
+  background-color: #ecdfbd !important;
+  right: 10vw !important;
+  width: 50px !important;
+}
+.carousel-indicators li {
+  border: 1px solid #3e6169 !important;
+}
+.carousel-indicators .active {
+  background-color: #3e6169;
+}
+.carousel-caption {
+  font-family: lato, sans-serif;
+}
+.carousel-control .icon-prev,
+.carousel-control .glyphicon-chevron-left {
+}
+.carousel-control .icon-next,
+.carousel-control .glyphicon-chevron-right {
+}
+.carousel-indicators {
+  bottom: 30px;
+}
+
+.read {
+  text-decoration: none;
+  color: #e5934b;
+}
+
+.read:hover {
+  color: #e86d03;
+}
+
+
+#contact {
+    background-color: #3e6169;
+    color: #ECDFBD;
+}
+.go {
+
+}
+.wrapper {
+    text-align: center;
+}
+
+.wrapper a > i{
+    color: #ECDFBD;
+    margin-left: 4px;
+}
+
+.wrapper a > i:hover {
+    color: #FBF9F2;
+}
+
+/* lg */
+@media (min-width: 1200px), @media (min-width: 992px)  {
+    .wrapper {
+        margin-top: 20px;
+    }
+}
+
+
+
+
+
+

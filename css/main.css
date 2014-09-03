@@ -244,7 +244,7 @@ ul.nav a:hover {
     color: #ecdfbd;  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .skilly, .caption {
         font-size: 1.5vw;
     }
@@ -277,12 +277,12 @@ ul.nav a:hover {
 }
 
 .writ {
-    padding: 5px;
+    padding: 7px;
     background: #468086;
 }
 
 .quant {
-    padding: 7px;
+    padding: 8.5px;
     background: #b2558e;
 }
 
@@ -297,7 +297,7 @@ ul.nav a:hover {
 }
 
 .slate {
-    padding: 9px;
+    padding: 10.5px;
     background: #9798a3;
 }
 

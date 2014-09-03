@@ -244,7 +244,7 @@ ul.nav a:hover {
     color: #ecdfbd;  
 }
 
-@media (max-width: 992px) {
+@media (max-width: 580px) {
     .skilly, .caption {
         font-size: 1.5vw;
     }
@@ -252,62 +252,67 @@ ul.nav a:hover {
 
 .excel {
     background: #42714c;
-    padding: 12.5px;
+    padding-top: 17px;
 }
 
 .ps {
-    padding: 13px;
+    padding-top: 27px;
+    padding-right: 5px;
+    padding-left: 5px;
     background: #3a3f7c;
  
 }
 
 .stata {
-    padding: 16px;
+    padding-top: 27px;
     background: #a04949;
 }
 
 .webbuild {
-    padding: 16px;
+    padding-top: 33px;
     background: #ed8455;
 }
 
 .python {
-    padding: 25px;
+    padding-top: 46px;
     background: #8fa05f;
 }
 
 .writ {
-    padding: 7px;
+    padding-top: 15px;
     background: #468086;
 }
 
 .quant {
-    padding: 8.5px;
+   padding-top: 15px;
     background: #b2558e;
 }
 
 .pan {
-    padding: 15px;
+    padding-top: 25px;
+    padding-right: 5px;
     background: #b28565;
 }
 
 .lang {
-    padding: 16px;
+    padding-top: 33px;
     background: #7fb5b5;
 }
 
 .slate {
-    padding: 10.5px;
+    padding-top: 25px;
     background: #9798a3;
 }
 
 .chart {
-    padding: 15px;
+    padding-top: 25px;
     background: #debc60;
 }
 
 .soc {
-    padding: 15px;
+    padding-top: 25px;
+    padding-right: 5px;
+    padding-left: 5px;
     background: #60486a;
 }
 

@@ -37,7 +37,7 @@ a {
 }
 
 #name:hover {
-    color: #3e6169 !important;
+    color: #ECDFBD !important;
     width: 100%;
 }
 
@@ -69,7 +69,7 @@ html,body {
 
 .navbar { 
     height: 4em;
-    background-color: #ECDFBD;
+    background-color: #3e6169;
     box-shadow: none !important;
     border-bottom: none;
 }
@@ -95,34 +95,46 @@ html,body {
 }
 
 ul.nav a:hover {
-    color: #6C8287 !important;
+    color: #eae5d8 !important;
 }
 
 #right-menu li a {
     font-size: 1em;
-    color: #3e6169;
+    color: #ECDFBD;
 
 }
 
 #name {
     font-size: 3.75vw;
     padding-left: 0px;
-    color: #3e6169;
+    color: #ECDFBD;
 }
 
 .navbar-brand:hover {
     color: #3e6169;
 }
 
-.jumbotron {
+/*.jumbotron {
     height: 100%;
-    background-image: url(../images/WallpaperDos.jpg);
+    background-image: url(../images/self.jpg);
     background-color: #3e6169;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     margin-bottom: 0em;
+}*/
+
+/* lg */
+@media (min-width: 1200px)  {
+    .bger {
+        max-height: 100%;
+        background-color: #ECDFBD
+    }
+    .bg {
+        max-height: 100%;
+        margin-left: 200px;
+    }
 }
 
 #about {

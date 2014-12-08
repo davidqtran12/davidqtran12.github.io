@@ -114,6 +114,14 @@ ul.nav a:hover {
     color: #3e6169;
 }
 
+
+.widewrapper {
+  width:100%;
+  }
+
+.widewrapper > img {
+  width:100%;
+}
 /*.jumbotron {
     height: 100%;
     background-image: url(../images/self.jpg);

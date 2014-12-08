@@ -1,4 +1,6 @@
 $(document).ready(function() {     
+    
+    
     //skill hover
     $("[rel='tooltip']").tooltip();    
  

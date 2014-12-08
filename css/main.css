@@ -126,16 +126,7 @@ ul.nav a:hover {
 }*/
 
 /* lg */
-@media (min-width: 1200px)  {
-    .bger {
-        max-height: 100%;
-        background-color: #ECDFBD
-    }
-    .bg {
-        max-height: 100%;
-        margin-left: 200px;
-    }
-}
+
 
 #about {
     background-color: #3e6169;

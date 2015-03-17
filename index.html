@@ -32,102 +32,6 @@
         <!--[if lte IE 6]>
             <script src="js/ie6/warning.js"></script><script>window.onload=function(){e("js/ie6/")}</script>
         <![endif]-->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                                    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-54324319-1', 'auto');
-            ga('send', 'pageview');
-
-        </script>
-        <script>$(document).ready(function() {     
-    
-    
-    //skill hover
-    $("[rel='tooltip']").tooltip();    
- 
-    $('.skilly').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    ); 
-    // navigation click actions 
-    $('.scroll-link').on('click', function(event){
-        event.preventDefault();
-        var sectionID = $(this).attr("data-id");
-        scrollToID('#' + sectionID, 750);
-    });
-    
-	// scroll to top action
-	$('.scroll-top').on('click', function(event) {
-		event.preventDefault();
-		$('html, body').animate({scrollTop:0}, 'slow'); 		
-	});
-	// mobile nav toggle
-	$('#nav-toggle').on('click', function (event) {
-		event.preventDefault();
-		$('#main-nav').toggleClass("open");
-	});
-    
-    
-    toggleSlides();
-
-                             
-});
-
-jQuery(document).ready(function() {
-    jQuery('.tabs .tab-links a').on('click', function(e)  {
-        var currentAttrValue = jQuery(this).attr('href');
- 
-        // Show/Hide Tabs
-        jQuery('.tabs ' + currentAttrValue).siblings().slideUp(400);
-        jQuery('.tabs ' + currentAttrValue).delay(400).slideDown(400);
- 
-        // Change/remove current tab to active
-        jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
- 
-        e.preventDefault();
-    });
-});
-
-
-//toggler
-function toggleSlides(){
-	$('.toggler').click(function(event){
-		var id=$(this).attr('id');
-		var widgetId=id.substring(id.indexOf('-')+1,id.length);
-		$('#'+widgetId).slideToggle();
-		$(this).toggleClass('sliderExpanded');
-		$('.closeSlider').click(function(){
-				$(this).parent().hide('slow');
-				var relatedToggler='toggler-'+$(this).parent().attr('id');
-				$('#'+relatedToggler).removeClass('sliderExpanded');
-		});
-	});
-};
-
-// scroll function
-function scrollToID(id, speed){
-	var offSet = 135;
-	var targetOffset = $(id).offset().top - offSet;
-	var mainNav = $('#main-nav');
-	$('html,body').animate({scrollTop:targetOffset}, speed);
-	if (mainNav.hasClass("open")) {
-		mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-		mainNav.removeClass("open");
-	}
-}
-if (typeof console === "undefined") {
-    console = {
-        log: function() { }
-    };
-}
-        </script>
     </head>
     <body>
         <!-- Site header and navigation -->
@@ -556,8 +460,7 @@ if (typeof console === "undefined") {
             <ul id="films">
                 <li><b><i>Facticity (2015)</i></b><br>
                     An aloof college senior spirals further into disconnect as he obsesses over a social media
-account of himself from
-a parallel universe.
+account of himself -- from a parallel universe.
                 </li>
             </ul>
         </div>
@@ -594,10 +497,10 @@ a parallel universe.
         </div>        
         
         <!-- JQuery and Bootstrap JS plugins, loaded at the end to save page load times -->
+    
         <script type="text/javascript" src="js/jquery-2.1.1.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <link href="//vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
-        <script src="//vjs.zencdn.net/4.12/video.js"></script>
+        <script type="text/javascript" src="js/_main.js"></script>
         <!--[if lte IE 9]>
             <script type="text/javascript" src="js/carousel-ie-fallback.js"></script>
         <![endif]-->      
